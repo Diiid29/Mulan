@@ -1,0 +1,635 @@
+/*Index*/
+*{margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(223, 255, 245);
+}
+
+header{
+    background-color: rgb(255, 218, 252);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgmulan {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+.icon1{
+    display: none;
+}
+
+.menu_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li{
+    margin: 5px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+
+ul li{
+    display: block;
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+/* Main */
+
+.titleinicio{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.videoindex{
+   width: 560px;
+   height: 300px;
+}
+
+
+.sectionindex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+   
+}
+
+.articleindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Cabin', sans-serif;
+    font-size: 3.5rem;
+    margin: 30px;
+}
+
+.textoindex {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.section_2{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.img_section1 {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.img_section2 {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.img_section3 {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.img_section4 {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.img_section5 {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+/*footer index*/
+
+.section_logosfooter {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.logosfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.face {
+    margin: 10px;
+}
+
+.ig {
+    margin: 10px;
+}
+
+.tw {
+    margin: 10px;
+}
+
+.wp {
+    margin: 10px;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+ul{
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Sobre Mulán */
+
+.video {
+    width: 1400px;
+    height: 500px;
+    padding: 50px;
+}
+
+.section_menu--sobremulan{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.article_menu--curso{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 50px;
+}
+
+.parrafo_curso{
+    align-items: center;
+}
+
+h1.titulo_menu--curso{
+    text-align: center;
+}
+
+/*servicios*/
+
+.imgtejiendo {
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    border-radius: 155px;
+    
+}
+
+.section_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*market*/
+
+.section_market {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.imgmarket {
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.titulo_market {
+    justify-self: center;
+    text-align: center;
+}
+
+.divmarket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.art1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-items: center;
+}
+
+.butind {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    list-style-type: none;
+}
+
+.divbutind {
+    list-style-type: none;
+}
+
+/*Login*/
+
+.mainlogin{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    margin-top: 110px;
+}
+
+.h1login{
+    text-align: center;
+}
+
+.section_login {
+    display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.artlog1 {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.artlog2{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.videologin {
+width: 550px;
+height: 400px;
+padding: 30px;
+
+}
+
+.loremlogin {
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+}
+
+.article_login {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.divlogin {
+    padding: 10px;
+}
+
+.input1 {
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.legendlogin {
+    font-family: 'Cabin', sans-serif;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.field {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.labellogin {
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.botoncitologin {
+    align-items: center;
+}
+
+.divterminos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divenviar {
+    padding: 10px;
+}
+
+.si1{
+    padding: 10px;
+}
+
+.no1{
+    padding: 10px;
+}
+
+.section_logosfooter{
+margin-top: 100px;
+}
+
+/*galeria indumentaria*/
+/*flex*/
+
+/* .section_indu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.imgind {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20%;
+}
+
+.tituloind {
+    text-align: center;
+}
+
+.contenedorindu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divindu1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divcurso1 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_cursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+/*grid*/
+
+.section_indu{
+justify-items: center;
+}
+
+.contenedorindu{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+}
+
+.imgind {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20%;
+}
+
+.tituloind {
+    text-align: center;
+}
+
+.divindu1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.divcurso1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedorcursos{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+grid-template-rows: repeat(3,1fr);
+}
+
+.videocurso{
+    width: 750px;
+    height: 400px;
+}
+
+/* MEDIA QUERIES*/
+
+/*TABLET*/
+
+@media (max-width:768px){
+
+    .img_section2{
+        display: none;
+    }
+    
+    .img_section3{
+        display: none;
+    }
+
+    .ul{
+    display: none;
+}
+
+.contenedorindu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .icon1{
+    display: inline;
+}
+
+.sectionindex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoindex{
+    width: 90%;
+}
+
+.videocurso{
+    width: 550px;
+    height: 300px;
+}
+
+.section_menu--sobremulan{
+    flex-direction: column;
+    align-items: center;
+}
+
+.video{
+    width: 650px;
+    height: 400px;
+}
+
+.mainlogin{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.section_login{
+    flex-direction: column;
+    align-items: center;
+}
+
+.artlog1{
+    order: 2;
+}
+
+.artlog2{
+    order: 3;
+}
+
+.artlog3{
+    order: 1;
+}
+.section_logosfooter{
+    margin: 0px;
+}
+
+}
+
+/*MOBILE*/
+
+@media (max-width:576px){
+    .img_section3{
+        display: none;
+    }
+
+    .imgmarket {
+        height: 300px;
+        width: 300px;
+    }
+
+    .section_2{
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_servicios{
+flex-direction: column;
+align-items: center;
+    }
+
+    .imgtejiendo{
+        width: 350px;
+        height: 350px;
+    }   
+
+    .loremservicios{
+        width: 90%;
+    }
+
+    .contenedorindu{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        }
+
+        .videocurso{
+            width: 450px;
+            height: 300px;
+        }
+
+        .video{
+            width: 450px;
+            height: 300px;
+        }
+
+        .titulo_menu--curso{
+            font-size: 3rem;
+        }
+
+        .videologin{
+            width: 450px;
+            height: 300px;
+        }
+
+}
