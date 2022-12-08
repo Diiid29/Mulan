@@ -334,8 +334,7 @@ h1.titulo_menu--curso {
 }
 
 .loremservicios {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /*market*/
@@ -453,6 +452,7 @@ h1.titulo_menu--curso {
     align-items: center;
     justify-content: center;
     max-width: 350px;
+    font-size: 1.5rem;
 }
 
 .article_login {
@@ -606,6 +606,11 @@ h1.titulo_menu--curso {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.precios{
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /*cursos*/
