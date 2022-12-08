@@ -238,6 +238,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 70px;
 }
 
 .logosfooter {
@@ -511,10 +512,6 @@ h1.titulo_menu--curso {
 
 .no1 {
     padding: 10px;
-}
-
-.section_logosfooter {
-    margin-top: 100px;
 }
 
 .butlogin {
