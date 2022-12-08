@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../extras/Fotos/General/3.webp" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <main>
         <section class="section_servicios">
             <h2>Servicios</h2>
-            <img class="imgtejiendo" src="../extras/Fotos/Index/7.webp" alt="tejiendo">
+            <img data-aos="zoom-in" class="imgtejiendo" src="../extras/Fotos/Index/7.webp" alt="tejiendo">
             <article class="article_servicios">
 
                 <p class="loremservicios">Principalmente nos dedicamos al diseño y elaboración de indumentaria femenina
@@ -81,7 +82,10 @@
             </article>
         </section>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

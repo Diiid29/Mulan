@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../extras/Fotos/General/3.webp" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -38,20 +39,21 @@
     <main class="mainlogin">
         <section class="section_login">
 
-            <article class="artlog1">
+            <article class="artlog1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <iframe class="videologin" src="https://www.youtube.com/embed/9vOqRzXmCpg" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </article>
 
-            <article class="artlog2">
+            <article class="artlog2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <p class="loremlogin">Ya somos mas de 7500 usuarios, le damos las gracias por confiar en nosotros,
                     estamos trabajando para mejorar su experiencia, sería de mucha ayuda para nosotros que pueda
                     suscribirse para poder seguir mejorando.</p>
             </article>
 
-            <article class="artlog3">
+            <article class="artlog3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                data-aos-duration="500">
                 <h2 class="h1login">Login</h2>
                 <form action="">
                     <article class="article_login">
@@ -119,6 +121,10 @@
         </section>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
