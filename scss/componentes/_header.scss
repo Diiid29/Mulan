@@ -1,0 +1,109 @@
+header {
+    background: rgb(193, 190, 255);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(222, 33, 221, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menunav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar{
+    width: 100%;
+    margin: 0px;
+}
+
+.divnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* max-height: 50px; */
+    animation: ease-in animation 1s;
+    margin-left: 20px;
+}   
+
+@keyframes animation {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.imgmulan {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+.icon1 {
+    display: none;
+}
+
+.menu_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    margin: 5px;
+    list-style-type: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+
+ul li {
+    display: block;
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+ul li:hover{
+
+    border-radius: 50px;
+    color: white;
+
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    /* background-color: black; */
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
