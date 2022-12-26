@@ -67,3 +67,17 @@ ul {
     flex-direction: row;
     justify-content: center;
 }
+
+.li_footer:hover{
+background-color: $white;
+}
+
+.pol_priv{
+    color: $black;
+}
+
+.pol_priv:hover{
+    color: $white !important;
+    background-color: $black;
+}
+

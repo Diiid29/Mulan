@@ -7,8 +7,12 @@ header {
     width: 100%;
 }
 
-.drop{
-    background-color: rgb(255, 0, 0);
+.dropul{
+    background-color: rgb(195, 243, 255);
+}
+
+.dropa:hover{
+ background-color: $black;
 }
 
 .menunav{
@@ -21,6 +25,9 @@ header {
 .navbar{
     width: 100%;
     margin: 0px;
+    display: flex;
+    justify-content: space-between  !important;
+    flex-wrap: nowrap;
 }
 
 .divnav {
@@ -68,7 +75,7 @@ h1 {
 .menu_nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: end  !important;
 }
 
 li {
@@ -94,12 +101,12 @@ ul li {
 ul li:hover{
 
     border-radius: 50px;
-    color: white;
+    background-color: rgb(255, 255, 255)  !important;
 
 }
 
 ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
     font-size: 1.5rem;
@@ -108,6 +115,6 @@ ul li a {
 
 ul li a:hover{
     /* background-color: black; */
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0)  !important;
     border-radius: 50px;
 }
