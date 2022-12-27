@@ -1,0 +1,280 @@
+/*Estilos de Index, Main y Footer*/
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionindex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+
+    &__video {
+        width: 560px;
+        height: 300px;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        &--parrafo {
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 10px;
+        }
+
+    }
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__img1 {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3) !important;
+        }
+    }
+
+    &__img2 {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3) !important;
+        }
+    }
+
+    &__img3 {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3) !important;
+        }
+    }
+
+    &__img4 {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3) !important;
+        }
+    }
+
+    &__img5 {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 5px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.3) !important;
+        }
+    }
+}
+
+//media queries tablet
+
+@media (max-width:768px) {
+
+.sectionindex{
+    flex-direction: column;
+    align-items: center;
+
+    &__video{
+        width: 400px;
+    }
+}
+
+.section2 {
+    &__img1{
+        display: none;
+    }
+
+    &__img2{
+        display: none;
+    }
+}
+
+// viejo codigo
+
+    .img_section2 {
+        display: none;
+    }
+
+    .img_section3 {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .contenedorindu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .sectionindex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videoindex {
+        width: 90%;
+    }
+
+    .videocurso {
+        width: 550px;
+        height: 300px;
+    }
+
+    .section_menu--sobremulan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        width: 550px;
+        height: 400px;
+    }
+
+    .mainlogin {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .section_login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artlog1 {
+        order: 2;
+    }
+
+    .artlog2 {
+        order: 3;
+    }
+
+    .artlog3 {
+        order: 1;
+    }
+
+    .section_logosfooter {
+        margin: 0px;
+    }
+
+}
+
+/*MOBILE*/
+
+@media (max-width:576px) {
+
+    .sectionindex{
+        &__video{
+            width: 300px;
+        }
+    }
+
+    .section2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+//viejo codigo
+
+    .img_section3 {
+        display: none;
+    }
+
+    .imgmarket {
+        height: 300px;
+        width: 300px;
+    }
+
+    .section_2 {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgtejiendo {
+        width: 350px;
+        height: 350px;
+    }
+
+    .loremservicios {
+        width: 90%;
+    }
+
+    .contenedorindu {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .videocurso {
+        width: 450px;
+        height: 300px;
+    }
+
+    .video {
+        width: 450px;
+        height: 300px;
+    }
+
+    .titulo_menu--curso {
+        font-size: 3rem;
+    }
+
+    .videologin {
+        width: 450px;
+        height: 300px;
+    }
+
+}

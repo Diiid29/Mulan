@@ -1,0 +1,37 @@
+.main__section--video {
+    width: 1100px;
+    height: 600px;
+    padding: 50px;
+
+}
+
+//media queries tablet
+
+@media (max-width:768px) {
+    .main__section--video {
+        width: 600px;
+        height: 500px;
+    }
+
+}
+
+/*MOBILE*/
+
+@media (max-width:576px) {
+
+    .main {
+        &__section {
+            &--title {
+                font-size: 2rem;
+            }
+
+            &--video {
+                width: 450px;
+                height: 350px;
+            }
+        }
+    }
+
+
+
+}

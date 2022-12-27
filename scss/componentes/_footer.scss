@@ -1,0 +1,55 @@
+.footer {
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            // mapas
+
+            $iconosSocial: (facebook: #2279e4,
+                instagram: #C92D8F,
+                twitter: #55acee,
+                whatsapp: green,
+            );
+
+            @each $redes,
+            $coloresredsocial in $iconosSocial {
+                .rs-#{$redes} {
+                    color: #000;
+                    font-size: 40px;
+                    padding: 30px;
+
+                    &:hover {
+                        color: $coloresredsocial;
+                    }
+                }
+            }
+        }
+
+        &--article2 {
+            &--copy {
+                font-family: 'Cabin', sans-serif;
+            }
+
+            &--ul {
+
+                &--li {
+
+                    &--a {
+                        padding: 10px;
+                        &:hover {
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(145, 140, 140);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

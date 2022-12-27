@@ -1,0 +1,164 @@
+//tuve que hacer todo sin anidamiento porque no me tomaba ningun valor que le daba, igualmente lo deje para que se vea donde esta la falla porque no me doy cuenta   
+
+.main1 {
+    margin-top: 110px;
+
+    &__section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-top: 260px;
+        margin-bottom: 200px;
+        gap: 20px;
+
+        &--article {
+            display: flex;
+            justify-content: center;
+
+            &--video {
+                width: 550px;
+                height: 400px;
+                padding: 30px;
+            }
+        }
+
+        &--article2 {
+           
+            &--parrafo {
+                font-size: 1.5rem;
+               
+            }
+        }
+
+        &--article3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+
+            &--form {
+                &--article {
+
+                    &--div1 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-items: center;
+                        padding: 30px;
+
+                        &--div {
+
+
+                            &--input {
+                                border-radius: 10px;
+                                text-align: center;
+                                padding: 5px;
+                            }
+                        }
+                    }
+
+                    &--field {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        &--legend {
+                            font-family: 'Cabin', sans-serif;
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
+
+                        &--si {
+                            flex-direction: row;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main1__section--article2{
+     display: flex;
+     align-items: center;
+}
+
+
+.main1__section--article3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main1__section--article3--article--div--divenviar--but {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.main1__section--article3--article--div--divenviar--but--li {
+    padding: 5px;
+}
+
+.main1__section--article3--article--div--divenviar--but--li--a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.main1__section--article3--article--div--divenviar {
+    text-align: center;
+}
+
+.main1__section--article3--article--div1 {
+    text-align: center;
+}
+
+.main1__section--article3--article--div1--div {
+    padding: 5px;
+}
+
+.main1__section--article3--article--div--field--si {
+   text-align: center;
+   padding: 5px;
+}
+
+.main1__section--article3--article--div {
+    text-align: center;
+    padding: 5px;
+}
+
+//media queries tablet
+
+@media (max-width:768px){
+    .main1{
+    &__section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        &--article{
+            order: 3;
+        }
+        &--article2{
+            order: 2;
+        }
+        &--article3{
+            order: 1
+            ;
+        }
+    }
+}
+}
+
+
+
+/*MOBILE*/
+
+@media (max-width:576px){
+
+    .main__section--article--video{
+        width: 500px;
+    }
+}
