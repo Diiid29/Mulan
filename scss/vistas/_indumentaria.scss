@@ -3,13 +3,10 @@
 
         &--contenedor {
 
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            @include grid (3,2);
 
             &--div {
-                display: flex;
-                flex-direction: column;
+                @extend .col;
                 align-items: center;
                 padding: 30px;
 

@@ -1,13 +1,11 @@
 .footer {
 
     &__section {
-        display: flex;
-        flex-direction: column;
+        @extend .col;
         align-items: center;
 
         &--article {
-            display: flex;
-            flex-direction: row;
+            @extend .row;
             justify-content: space-evenly;
 
             // mapas
@@ -21,7 +19,7 @@
             @each $redes,
             $coloresredsocial in $iconosSocial {
                 .rs-#{$redes} {
-                    color: #000;
+                    color: $black;
                     font-size: 40px;
                     padding: 30px;
 
@@ -44,8 +42,9 @@
                     &--a {
                         padding: 10px;
                         &:hover {
-                            color: rgb(255, 255, 255);
-                            background-color: rgb(145, 140, 140);
+                            color: $white;
+                            background-color: $black;
+                            border-radius: 30px;
                         }
                     }
                 }

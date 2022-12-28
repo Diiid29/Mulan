@@ -13,8 +13,7 @@
             gap: 20px;
 
             &--div {
-                display: flex;
-                flex-direction: column;
+                @extend .col;
                 align-items: center;
                 margin-top: 60px;
                 margin-bottom: 55px;

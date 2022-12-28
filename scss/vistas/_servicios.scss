@@ -1,12 +1,10 @@
 .main {
     &__section {
-        display: flex;
-        flex-direction: column;
+        @extend .col;
         align-items: center;
 
         &--div{
-            display: flex;
-            flex-direction: row;
+            @extend .row;
             justify-content: center;
             &--imgservicios {
             height: 500px;
@@ -48,9 +46,3 @@
     }
 }
 
-/*MOBILE*/
-
-// @media (max-width:576px) {
-
-
-// }

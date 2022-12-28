@@ -1,16 +1,16 @@
 header {
     background: rgb(193, 190, 255);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(222, 33, 221, 1) 0%, rgba(0, 212, 255, 1) 100%);
-    display: flex;
-    flex-direction: row;
+    @extend .row;
     justify-content: space-between !important;
     width: 100%;
     
 }
 
 .navbar-brand{
-    display: flex;
-    flex-direction: row;
+    @extend .row
+    
+
 }
 
 .navbar-nav{
@@ -30,29 +30,13 @@ header {
     justify-content: flex-end !important;
 }
 
-.menunav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
 .navbar{
     width: 100%;
     margin: 0px;
-    display: flex;
+    @extend .row;
     justify-content: space-between  !important;
     flex-wrap: nowrap;
 }
-
-.divnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    animation: ease-in animation 1s;
-    margin-left: 20px;
-}   
 
 @keyframes animation {
     0% {
@@ -72,6 +56,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: solid;
 }
 
 h1 {
@@ -87,8 +72,7 @@ h1 {
 }
 
 .menu_nav {
-    display: flex;
-    flex-direction: row;
+    @extend .row;
     justify-content: end  !important;
 }
 
@@ -110,24 +94,27 @@ ul li {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px;
-}
 
-ul li:hover{
+    &:hover{
 
     border-radius: 50px;
-    background-color: rgb(255, 255, 255)  !important;
-
-}
-
-ul li a {
-    color: rgb(0, 0, 0);
+    background-color: $white  !important;
+    }
+    &a {
+    color: $black;
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
     font-size: 1.5rem;
     transition: 0.5s;
-}
-
-ul li a:hover{
-    color: rgb(0, 0, 0)  !important;
+    &:hover{
+    color: $black  !important;
     border-radius: 50px;
 }
+}
+}
+
+
+
+
+
+

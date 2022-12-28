@@ -3,7 +3,38 @@
 $white: #ffffff;
 $black: #000000;
 
+//utilidades
 
-//breakpoints
+$shadow: 0 25px 50px 0px $black;
+
+//extends
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgindex {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    transition: all 1s;
+    box-shadow: $shadow;
+}
 
 
+//mixins
+
+@mixin grid ($cantidadcol,$rows){
+    display: grid;
+    grid-template-columns: repeat($cantidadcol, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+}
