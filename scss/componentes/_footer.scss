@@ -4,92 +4,102 @@
         @extend .col;
         align-items: center;
 
-        &--div{
+        i{
+            display: none;
+        }
+
+        &--div {
             @extend .row;
             justify-content: space-evenly;
             width: 100%;
 
-            &--article1{
+            i {
+                display: none
+            }
+
+            &--article1 {
                 @extend .col;
 
-                &--title{
+                &--title {
                     font-size: 1.2rem;
 
                 }
-                
-                &--ul{
-                @extend .col;
 
-                &--li{
-                    font-size: 0.8rem;
-                    padding: 0px;
-                    margin-left: 0px;
-                }
+                &--ul {
+                    @extend .col;
+
+                    &--li {
+                        font-size: 0.8rem;
+                        padding: 0px;
+                        margin-left: 0px;
+                    }
                 }
             }
 
-            &--article2{
+            &--article2 {
                 @extend .col;
 
-                &--title{
+                &--title {
                     font-size: 1.2rem;
 
                 }
-                
-                &--ul{
-                @extend .col;
 
-                &--li{
-                    font-size: 0.8rem;
-                    padding: 0px;
-                    margin-left: 0px;
-                }
+                &--ul {
+                    @extend .col;
+
+                    &--li {
+                        font-size: 0.8rem;
+                        padding: 0px;
+                        margin-left: 0px;
+                    }
                 }
             }
 
-            &--article3{
+            &--article3 {
                 @extend .col;
-                
-                &--title{
+
+                &--title {
                     font-size: 1.2rem;
 
                 }
-                
-                &--ul{
-                @extend .col;
 
-                &--li{
-                    font-size: 0.8rem;
-                    padding: 0px;
-                    margin-left: 0px;
-                }
+                &--ul {
+                    @extend .col;
+
+                    &--li {
+                        font-size: 0.8rem;
+                        padding: 0px;
+                        margin-left: 0px;
+                    }
                 }
             }
 
-            &--article4{
+            &--article4 {
                 @extend .col;
                 height: 100%;
 
-                &--title{
+                &--title {
                     font-size: 1.2rem;
                 }
 
-                &--div{
+                &--div {
 
-                    &--div{
+                    &--div {
                         padding-top: 10px;
                         padding-bottom: 10px;
-                        &--input{
+
+                        &--input {
                             border-radius: 5px;
                         }
 
-                        &--button{
+                        &--button {
                             border-radius: 10px;
                             background-color: #ffbee7;
 
-                            &--li{
+                            &--li {
                                 background-color: none;
-                                &--a{
+
+                                &--a {
                                     list-style-type: none;
                                     color: $black;
                                     font-weight: bold;
@@ -97,25 +107,26 @@
                                     width: 100%;
                                     padding-right: 5px;
                                     padding-left: 5px;
-                                    &:hover{
-                                        color: $white;                              
+
+                                    &:hover {
+                                        color: $white;
                                     }
                                 }
                             }
                         }
                     }
 
-                    &--pic{                      
-                            height: 100%;
+                    &--pic {
+                        height: 100%;
 
-                            &--img{
-                                width: 200px;
-                                height: 100px;
-                                border-radius: 15px;
-                                border-style: solid;
-                                border-width: 5px;
-                                box-shadow: $shadow;
-                            }
+                        &--img {
+                            width: 200px;
+                            height: 100px;
+                            border-radius: 15px;
+                            border-style: solid;
+                            border-width: 5px;
+                            box-shadow: $shadow;
+                        }
                     }
                 }
             }
@@ -158,8 +169,10 @@
                 &--li {
                     padding: 0px;
                     margin: 0px;
+
                     &--a {
                         padding: 10px;
+
                         &:hover {
                             color: $white;
                             background-color: $black;
@@ -168,6 +181,21 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//media queries tablet
+
+@media (max-width:768px) {
+    .footer__section{
+        i{
+            display: block;
+            font-size: 40px;
+        }
+
+        &--div{
+            display: none;
         }
     }
 }
