@@ -159,7 +159,13 @@
 
 @media (max-width:576px){
 
-    .main__section--article--video{
-        width: 500px;
+    .main{
+       &__section{
+        &--article{
+            &--video{
+                width: 300px;
+            }
+        }
+       }
     }
 }

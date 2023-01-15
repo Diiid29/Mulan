@@ -595,7 +595,7 @@ img {
 /*MOBILE*/
 @media (max-width: 576px) {
   .main__section--article--video {
-    width: 500px; } }
+    width: 300px; } }
 
 .footer__section {
   align-items: center; }
