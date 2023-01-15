@@ -1,8 +1,8 @@
-.row, p, ul, header, .navbar-brand, .navbar, .menu_nav, .title, .sectionindex, .section2, .main__section--div, .main1__section--article, .main1__section--article3--form--article--field, .main1__section--article3--form--article--field--si, .footer__section--article {
+.row, p, ul, header, .navbar-brand, .navbar, .menu_nav, .title, .sectionindex, .section2, .main__section--div, .main1__section--article, .main1__section--article3--form--article--field, .main1__section--article3--form--article--field--si, .footer__section--div, .footer__section--article {
   display: flex;
   flex-direction: row; }
 
-.col, .sectionindex__article, .main__section, .main__section--contenedor--div, .main__section--contenedor1--div, .main1__section--article3, .main1__section--article3--form--article--div1, .footer__section {
+.col, .sectionindex__article, .main__section, .main__section--div--art1, .main__section--contenedor--div, .main__section--contenedor1--div, .main1__section--article3, .main1__section--article3--form--article--div1, .footer__section, .footer__section--div--article1, .footer__section--div--article1--ul, .footer__section--div--article2, .footer__section--div--article2--ul, .footer__section--div--article3, .footer__section--div--article3--ul, .footer__section--div--article4 {
   display: flex;
   flex-direction: column; }
 
@@ -98,7 +98,6 @@ h1 {
   justify-content: end  !important; }
 
 li {
-  margin: 5px;
   list-style-type: none; }
 
 img {
@@ -106,22 +105,23 @@ img {
   width: 50px;
   display: inline; }
 
-ul li {
+.nav-item {
   display: block;
   display: inline;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px; }
-  ul li:hover {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .nav-item:hover {
     border-radius: 50px;
-    background-color: #ffffff !important; }
-  ul lia {
+    background-color: #ffffff; }
+  .nav-itema {
     color: #000000;
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
     font-size: 1.5rem;
     transition: 0.5s; }
-    ul lia:hover {
+    .nav-itema:hover {
       color: #000000 !important;
       border-radius: 50px; }
 
@@ -200,6 +200,36 @@ ul li {
       height: 300px; }
   .main__section--title {
     text-align: center; } }
+
+.main__section--div {
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px; }
+  .main__section--div--art1 {
+    align-items: center; }
+    .main__section--div--art1--pic {
+      margin-bottom: 30px; }
+      .main__section--div--art1--pic--img {
+        height: 400px;
+        width: 400px;
+        border-radius: 20%;
+        transition: all 1s;
+        border-style: solid;
+        border-width: 5px; }
+        .main__section--div--art1--pic--img :hover {
+          transform: scale(1.1); }
+    .main__section--div--art1--div--but {
+      border-radius: 10px;
+      background-color: #ffbee7; }
+      .main__section--div--art1--div--but--li--a {
+        color: #000000;
+        font-weight: bold;
+        text-decoration: none;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px; }
+        .main__section--div--art1--div--but--li--a:hover {
+          color: #ffffff; }
 
 .main__section--contenedor {
   display: grid;
@@ -335,7 +365,8 @@ ul li {
     .main1__section--article--video {
       width: 550px;
       height: 400px;
-      padding: 30px; }
+      margin-left: 50px;
+      box-shadow: 0 25px 50px 0px #000000; }
     .main1__section--article2--parrafo {
       font-size: 1.5rem; }
     .main1__section--article3 {
@@ -419,6 +450,60 @@ ul li {
 
 .footer__section {
   align-items: center; }
+  .footer__section--div {
+    justify-content: space-evenly;
+    width: 100%; }
+    .footer__section--div--article1--title {
+      font-size: 1.2rem; }
+    .footer__section--div--article1--ul--li {
+      font-size: 0.8rem;
+      padding: 0px;
+      margin-left: 0px; }
+    .footer__section--div--article2--title {
+      font-size: 1.2rem; }
+    .footer__section--div--article2--ul--li {
+      font-size: 0.8rem;
+      padding: 0px;
+      margin-left: 0px; }
+    .footer__section--div--article3--title {
+      font-size: 1.2rem; }
+    .footer__section--div--article3--ul--li {
+      font-size: 0.8rem;
+      padding: 0px;
+      margin-left: 0px; }
+    .footer__section--div--article4 {
+      height: 100%; }
+      .footer__section--div--article4--title {
+        font-size: 1.2rem; }
+      .footer__section--div--article4--div--div {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .footer__section--div--article4--div--div--input {
+          border-radius: 5px; }
+        .footer__section--div--article4--div--div--button {
+          border-radius: 10px;
+          background-color: #ffbee7; }
+          .footer__section--div--article4--div--div--button--li {
+            background-color: none; }
+            .footer__section--div--article4--div--div--button--li--a {
+              list-style-type: none;
+              color: #000000;
+              font-weight: bold;
+              text-decoration: none;
+              width: 100%;
+              padding-right: 5px;
+              padding-left: 5px; }
+              .footer__section--div--article4--div--div--button--li--a:hover {
+                color: #ffffff; }
+      .footer__section--div--article4--div--pic {
+        height: 100%; }
+        .footer__section--div--article4--div--pic--img {
+          width: 200px;
+          height: 100px;
+          border-radius: 15px;
+          border-style: solid;
+          border-width: 5px;
+          box-shadow: 0 25px 50px 0px #000000; }
   .footer__section--article {
     justify-content: space-evenly; }
     .footer__section--article .rs-facebook {
@@ -446,10 +531,14 @@ ul li {
       .footer__section--article .rs-whatsapp:hover {
         color: green; }
   .footer__section--article2--copy {
-    font-family: 'Cabin', sans-serif; }
-  .footer__section--article2--ul--li--a {
-    padding: 10px; }
-    .footer__section--article2--ul--li--a:hover {
-      color: #ffffff;
-      background-color: #000000;
-      border-radius: 30px; }
+    font-family: 'Cabin', sans-serif;
+    padding: 0px; }
+  .footer__section--article2--ul--li {
+    padding: 0px;
+    margin: 0px; }
+    .footer__section--article2--ul--li--a {
+      padding: 10px; }
+      .footer__section--article2--ul--li--a:hover {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 30px; }
