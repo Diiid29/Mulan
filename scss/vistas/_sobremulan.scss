@@ -1,9 +1,21 @@
-.main__section--video {
-    width: 1100px;
+.main{
+    &__section{
+        &--video{
+            width: 1100px;
     height: 600px;
     padding: 50px;
-
+        }
+        &--art{
+            &--div{
+                @extend .col;
+            align-items: center;
+            }
+            
+        }
+    }
 }
+
+
 
 //media queries tablet
 

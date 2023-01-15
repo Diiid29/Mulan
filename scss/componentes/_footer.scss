@@ -4,8 +4,8 @@
         @extend .col;
         align-items: center;
 
-        i{
-            display: none;
+        .bi-list{
+            display: none
         }
 
         &--div {
@@ -189,7 +189,7 @@
 
 @media (max-width:768px) {
     .footer__section{
-        i{
+        .bi-list{
             display: block;
             font-size: 40px;
         }

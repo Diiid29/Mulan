@@ -33,7 +33,7 @@
                 &--but {
                     padding: 5px;
                     background-color: white;
-                    border-radius: 50px;
+                    border-radius: 15px;
                     transition: 0.5s;
 
                     &--li {
@@ -45,9 +45,26 @@
                             font-size: 1rem;
                             font-weight: bold;
 
+
                         }
                     }
+                    
                 }
+            }
+        }
+        &--contenedor2{
+            @extend .col;
+            padding: 20px;
+            &--strong{
+                width: 100%;
+                margin-left: 30px;
+                text-align: start;
+                font-size: 2.5rem;
+            }
+            &--p{
+                text-align: start;
+                justify-content: start;
+                font-size: 1.5rem;
             }
         }
     }
@@ -56,27 +73,42 @@
 //media queries tablet
 
 @media (max-width:768px) {
-    .main1__section--contenedor1 {
-
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-
-        &--div {
-            &--videocurso {
-                width: 450px;
-                height: 300px;
+    .main {
+        &__section {
+    
+            &--contenedor1 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 20px;
+            }
+            &--contenedor2 {
+                &--strong{
+                    margin: 0px;
+                    text-align: center;
+                }
+                &--p{
+                    text-align: center;
+                }
             }
         }
     }
-}
+}    
 
 /*MOBILE*/
 
 @media (max-width:576px) {
 
-    .main1__section--contenedor1--div--videocurso{
-        width: 350px;
-        height: 250px;
+    .main{
+        &__section{
+            &--contenedor1 {
+                &--div{
+                    &--videocurso{
+                        width: 300px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -117,10 +117,18 @@ img {
     .collapse{
         position: absolute;
         right: 0;
-        top: 100px;
+        top: 78px;
         width: 100%;
         background-color: $white;
+        z-index: 1;
 
+        .navbar-nav {
+            text-align: right;
+
+            .dropul{
+                 text-align: right;
+            }
+        }
     }
 }
 

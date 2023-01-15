@@ -3,7 +3,7 @@
 
         &--contenedor {
 
-            @include grid (3,2);
+            @include grid (3, 2);
 
             &--div {
                 @extend .col;
@@ -31,30 +31,19 @@
                 &--but {
                     padding: 5px;
                     background-color: white;
-                    border-radius: 50px;
-                    transition: 0.5s;
-
-                    :hover {
-
-                        border-radius: 50px;
-
-                    }
+                    border-radius: 15px;
+                    
 
                     &--li {
 
                         &--a {
                             color: rgb(0, 0, 0);
                             text-decoration: none;
-                            list-style-type: none;
+                            
                             font-family: 'Cabin', sans-serif;
                             font-size: 1rem;
                             font-weight: bold;
 
-
-                            :hover {
-                                color: rgb(255, 255, 255);
-
-                            }
                         }
                     }
                 }

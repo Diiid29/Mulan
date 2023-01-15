@@ -3,23 +3,130 @@
         @extend .col;
         align-items: center;
 
-        &--div{
+        &--div {
             @extend .row;
             justify-content: center;
+
             &--imgservicios {
-            height: 500px;
-            width: 500px;
-            border-radius: 155px;
-            border-style: solid;
-            border-width: 10px;
-            margin-bottom: 30px;
+                height: 500px;
+                width: 500px;
+                border-radius: 155px;
+                border-style: solid;
+                border-width: 10px;
+                margin-bottom: 30px;
+            }
         }
-        }
-        
+
 
         &--parrafo {
             font-size: 1.5rem;
         }
+
+    }
+
+    &__section2 {
+        padding: 40px;
+
+        &--art {
+            @extend .row;
+            margin-bottom: 40px;
+
+            &--pic {
+                &--img {
+                    @extend .imgservicios;
+                }
+            }
+
+            &--div {
+                @extend .col;
+                align-items: center;
+                justify-content: center;
+
+                &--strong {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        &--art2 {
+            @extend .row;
+            margin-bottom: 40px;
+
+            &--pic {
+                &--img {
+                    @extend .imgservicios;
+                }
+            }
+
+            &--div {
+                @extend .col;
+                align-items: center;
+                justify-content: center;
+                &--strong {
+                    font-size: 2rem;
+                }
+
+            }
+        }
+
+        &--art3 {
+            @extend .row;
+            margin-bottom: 40px;
+
+            &--pic {
+                @extend .row;
+                align-items: center;
+                &--img {
+                    @extend .imgservicios;
+                    
+                }
+            }
+
+            &--div {
+                @extend .col;
+                align-items: center;
+                justify-content: center;
+
+                &--strong {
+                    font-size: 2rem;
+                }
+
+                &--p{
+                    padding: 0px;
+                    margin: 7px;
+                }
+
+            }
+        }
+        &--art4 {
+            @extend .row;
+            margin-bottom: 40px;
+
+            &--pic {
+                
+                &--img {
+                    @extend .imgservicios;
+                    
+                }
+            }
+
+            &--div {
+                @extend .col;
+                align-items: center;
+                justify-content: center;
+
+                &--strong {
+                    font-size: 2rem;
+                }
+
+                &--p{
+                    padding: 0px;
+                    margin: 7px;
+                }
+
+            }
+        }
+
 
     }
 }
@@ -28,9 +135,6 @@
 
 @media (max-width:768px) {
     .main__section {
-
-
-
         &--div {
             justify-content: center;
 
@@ -44,5 +148,74 @@
     .main__section--title {
         text-align: center;
     }
-}
 
+
+.main__section2{
+    &--art{
+        display: flex;
+        flex-direction: column;
+        &--pic{
+            display: flex;
+            justify-content: center;
+            
+            &--img{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--div{
+            margin-top: 40px;
+        }
+    }
+
+    &--art2{
+        display: flex;
+        flex-direction: column;
+        &--pic{
+            display: flex;
+            justify-content: center;
+            
+            &--img{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--div{
+            margin-top: 40px;
+        }
+    }
+
+    &--art3{
+        display: flex;
+        flex-direction: column;
+        &--pic{
+            display: flex;
+            justify-content: center;
+            
+            &--img{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--div{
+            margin-top: 40px;
+        }
+    }
+    &--art4{
+        display: flex;
+        flex-direction: column;
+        &--pic{
+            display: flex;
+            justify-content: center;
+            
+            &--img{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--div{
+            margin-top: 40px;
+        }
+    }
+}
+}
