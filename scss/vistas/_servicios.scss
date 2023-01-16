@@ -41,7 +41,7 @@
                 @extend .col;
                 align-items: center;
                 justify-content: center;
-
+                margin-left: 30px;
                 &--strong {
                     font-size: 2rem;
                 }
@@ -62,6 +62,7 @@
                 @extend .col;
                 align-items: center;
                 justify-content: center;
+                margin-left: 30px;
                 &--strong {
                     font-size: 2rem;
                 }
@@ -86,7 +87,7 @@
                 @extend .col;
                 align-items: center;
                 justify-content: center;
-
+                margin-left: 30px;
                 &--strong {
                     font-size: 2rem;
                 }
@@ -114,7 +115,7 @@
                 @extend .col;
                 align-items: center;
                 justify-content: center;
-
+                margin-left: 30px;
                 &--strong {
                     font-size: 2rem;
                 }
@@ -137,7 +138,7 @@
     .main__section {
         &--div {
             justify-content: center;
-
+            margin-left: 0px;
             &--imgservicios {
                 width: 300px;
                 height: 300px;
@@ -165,6 +166,10 @@
         }
         &--div{
             margin-top: 40px;
+            margin-left: 0px;
+            &--strong{
+                text-align: center;
+            }
         }
     }
 
@@ -182,6 +187,9 @@
         }
         &--div{
             margin-top: 40px;
+            &--strong{
+                text-align: center;
+            }
         }
     }
 
@@ -199,6 +207,10 @@
         }
         &--div{
             margin-top: 40px;
+            margin-left: 0px;
+            &--strong{
+                text-align: center;
+            }
         }
     }
     &--art4{
@@ -215,6 +227,10 @@
         }
         &--div{
             margin-top: 40px;
+            margin-left: 0px;
+            &--strong{
+                text-align: center;
+            }
         }
     }
 }

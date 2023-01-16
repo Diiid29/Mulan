@@ -7,7 +7,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
         gap: 20px;
-
+ 
         &--article {
             @extend .row;
 
@@ -141,6 +141,14 @@
         margin-bottom: 0px;
         &--article{
             order: 3;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            &--video{
+                width: 500px;
+                height: 350px;
+                margin: 0px;
+            }
         }
         &--article2{
             order: 2;
@@ -159,11 +167,23 @@
 
 @media (max-width:576px){
 
-    .main{
+    .main1{
        &__section{
         &--article{
             &--video{
-                width: 300px;
+                width: 400px;
+                height: 300px;
+            }
+        }
+        &--article3{
+            &--article{
+                &--div{
+                    &--field{
+                        &--legend {
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
        }
